@@ -1,0 +1,50 @@
+body {
+  background-color: #eae4fc;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  background-color: #8b64ed;
+  height: 100vh;
+  width: 20%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.link-div {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 10px;
+}
+
+.link-btn {
+  width: 12rem;
+  height: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  background-color: #fcfafe;
+  text-decoration: none;
+  gap: 10px;
+}
+.link-btn:hover {
+  background-color: #4713867a;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
