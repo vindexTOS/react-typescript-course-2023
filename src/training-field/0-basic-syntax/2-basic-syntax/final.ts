@@ -1,10 +1,23 @@
+// import somthing from '../../../cxramtasiqit'
+
+// const Hello = ()=>{
+//    return "hello world"
+// }
+// Hello('gio')
+
 function main() {
+  type JobDescriptionType = {
+    skills: string
+    position: string
+  }
+
   type PersonType = {
     name: string
     age: number
     work: boolean
-    salary?: null
+    salary?: null | number | string | undefined
     image?: string
+    jobDescription?: JobDescriptionType
   }
 
   let name: string = 'Gio'
@@ -32,4 +45,11 @@ function main() {
     vite: 'Type',
     type: 'script',
   })
+
+  let jobDescription = {
+    skills: 'javascript',
+    position: 'junior',
+  }
+
+  person.jobDescription = jobDescription
 }

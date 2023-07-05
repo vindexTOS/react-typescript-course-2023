@@ -30,4 +30,10 @@ export const NavLinks: LinkType[] = [
     '1-useState-final',
     'use-state-final',
   ),
+  new LinkClass(
+    'Task Manager Start',
+    'task-manager-starter',
+    'Task Manager Final',
+    'task-manager-final',
+  ),
 ]
