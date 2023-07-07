@@ -166,18 +166,24 @@ main {
   position: absolute;
   top: 200px;
   background-color: #f5f5f5;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 160px;
+  height: 200px;
   overflow-y: scroll;
   border-radius: 5px;
   box-shadow: 3px 3px 7px -4px rgba(0, 0, 0, 1);
   -webkit-box-shadow: 3px 3px 7px -4px rgba(0, 0, 0, 1);
   -moz-box-shadow: 3px 3px 7px -4px rgba(0, 0, 0, 1);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-
+.list-wrapper::-webkit-scrollbar {
+  display: none;
+}
 .to-do-btn {
   position: absolute;
-  bottom: 120px;
+  bottom: 70px;
   height: 3rem;
   width: 9rem;
   border-radius: 30px;
@@ -202,14 +208,13 @@ main {
 
 .input-wrapper {
   position: absolute;
-  top: 420px;
+  top: 440px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #f5f5f5;
   width: 100%;
   height: 100px;
-
   border-radius: 5px;
   transition: 0.5s ease-in-out;
   box-shadow: 3px 3px 7px -4px rgba(0, 0, 0, 1);
@@ -254,4 +259,58 @@ main {
 .mapped-list {
   display: flex;
   flex-direction: column;
+}
+
+.single-list {
+  text-align: center;
+  color: #b0b0b0;
+  overflow-wrap: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.icon-wrapper {
+  display: flex;
+  gap: 5px;
+}
+.task {
+  width: 26rem;
+}
+.edit-input {
+  outline: none;
+  background: transparent;
+  border: none;
+  text-align: center;
+  color: #b0b0b0;
+  height: 3rem;
+  width: 22rem;
+}
+.trash {
+  font-size: 1.2rem;
+  color: rgba(255, 71, 71, 0.741);
+  cursor: pointer;
+}
+.trash:hover {
+  color: rgba(249, 9, 9, 0.741);
+}
+
+.edit {
+  font-size: 1.3rem;
+  color: rgb(10, 203, 10);
+  cursor: pointer;
+}
+
+.edit:hover {
+  color: rgb(13, 162, 13);
+}
+
+.save {
+  font-size: 1.2rem;
+  color: rgb(44, 188, 255);
+  cursor: pointer;
+}
+.save:hover {
+  color: rgb(0, 152, 223);
 }

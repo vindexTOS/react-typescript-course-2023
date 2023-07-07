@@ -7,6 +7,9 @@ type ToDoProps = {
   taskList: TaskListType[]
   setTask: React.Dispatch<React.SetStateAction<string>>
   task: string
+  DeleteFromList: (id: number) => void
+  EditList: (id: number) => void
+  setEditText: React.Dispatch<React.SetStateAction<string>>
 }
 const ToDo: FC<ToDoProps> = ({
   dropDown,
@@ -14,13 +17,22 @@ const ToDo: FC<ToDoProps> = ({
   taskList,
   setTask,
   task,
+  DeleteFromList,
+  EditList,
+  setEditText,
 }): JSX.Element => {
   const [inputDropDown, setInputDropDown] = useState<boolean>(false)
   return (
     <div className={` ${dropDown ? 'to-do-wrapper' : 'hidden'}   `}>
       <div className="list-wrapper">
         {taskList?.map((val: TaskListType) => (
-          <List key={val.id} {...val} />
+          <List
+            key={val.id}
+            taskList={val}
+            DeleteFromList={DeleteFromList}
+            setEditText={setEditText}
+            EditList={EditList}
+          />
         ))}
       </div>
 
