@@ -36,4 +36,10 @@ export const NavLinks: LinkType[] = [
     'Task Manager Final',
     'task-manager-final',
   ),
+  new LinkClass(
+    'Use Reducer Starter',
+    'use-reducer-starter',
+    'Use Reducer Final',
+    'use-reducer-final',
+  ),
 ]
