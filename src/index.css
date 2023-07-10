@@ -65,7 +65,7 @@ main {
   gap: 5px;
 }
 
-/*  Task Manager Styling */
+/*  Task Manager Styling //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .task-body {
   width: 100%;
@@ -313,4 +313,98 @@ main {
 }
 .save:hover {
   color: rgb(0, 152, 223);
+}
+/* stop watch ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.watch-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.9;
+
+  background-color: #34336c;
+  width: 300px;
+  height: 500px;
+  border-radius: 3px;
+  position: relative; /* Add position relative to establish containing context */
+  overflow: hidden;
+}
+
+.watch-wrapper::before {
+  z-index: -10;
+  position: absolute;
+  opacity: 0.9;
+  content: '';
+  bottom: 0px;
+  left: 210px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 220px solid transparent;
+  border-right: 220px solid transparent;
+  border-bottom: 250px solid #c33e79;
+}
+.watch-wrapper::after {
+  z-index: -9;
+  opacity: 0.9;
+  position: absolute;
+  content: '';
+  bottom: 0px;
+  left: 250px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 220px solid transparent;
+  border-right: 220px solid transparent;
+  border-bottom: 250px solid #ff4646;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #ff4646;
+}
+
+.btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.reset-btn {
+  background-color: white;
+  height: 40px;
+
+  width: 7rem;
+  border: none;
+  border-radius: 25px;
+
+  color: rgb(11, 10, 10);
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.start-btn {
+  background-color: #f1ff3c;
+  height: 40px;
+
+  width: 7rem;
+  border: none;
+  border-radius: 25px;
+
+  color: rgb(11, 10, 10);
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.reset-btn:hover {
+  background-color: #dae0f5;
+}
+.start-btn:hover {
+  background-color: rgb(254, 229, 87);
 }

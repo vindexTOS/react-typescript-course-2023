@@ -5,6 +5,8 @@ import TaskManagerStarter from './training-field/2-task-manager/starter/TaskMana
 import TaskManagerFinal from './training-field/2-task-manager/final/TaskManagerFinal'
 import Usereducerstarter from './training-field/3-user-reducer/starter/1-use-reducer-starter'
 import Usereducerfinal from './training-field/3-user-reducer/final/1-use-reducer-final'
+import StopWatchStarter from './training-field/4-sports-timer/starter/StopWatchStarter'
+import StopWatchFinal from './training-field/4-sports-timer/final/StopWatchFinal'
 import { Route, Routes } from 'react-router-dom'
 function App() {
   return (
@@ -13,10 +15,15 @@ function App() {
       <Routes>
         <Route path="use-state-final" element={<UseStatePrimitiveFinal />} />
         <Route path="use-state-start" element={<UseStatePrimitiveStarter />} />
+
         <Route path="task-manager-starter" element={<TaskManagerStarter />} />
         <Route path="task-manager-final" element={<TaskManagerFinal />} />
-        <Route path="use-reducer-final" element={<Usereducerfinal />} />
+
         <Route path="use-reducer-starter" element={<Usereducerstarter />} />
+        <Route path="use-reducer-final" element={<Usereducerfinal />} />
+
+        <Route path="stop-watch-starter" element={<StopWatchStarter />} />
+        <Route path="stop-watch-final" element={<StopWatchFinal />} />
       </Routes>
     </main>
   )

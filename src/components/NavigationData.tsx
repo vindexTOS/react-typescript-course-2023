@@ -42,4 +42,10 @@ export const NavLinks: LinkType[] = [
     'Use Reducer Final',
     'use-reducer-final',
   ),
+  new LinkClass(
+    'Stop Watch Starter',
+    'stop-watch-starter',
+    'STop Watch Final',
+    'stop-watch-final',
+  ),
 ]
