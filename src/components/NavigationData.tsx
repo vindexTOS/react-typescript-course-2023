@@ -45,7 +45,7 @@ export const NavLinks: LinkType[] = [
   new LinkClass(
     'Stop Watch Starter',
     'stop-watch-starter',
-    'STop Watch Final',
+    'Stop Watch Final',
     'stop-watch-final',
   ),
 ]
